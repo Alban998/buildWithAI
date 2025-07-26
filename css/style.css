@@ -1,0 +1,19 @@
+/* Basic styling for the body to center the canvas and provide a background */
+body {
+  margin: 0;
+  overflow: hidden; /* Hide scrollbars if canvas is larger than viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  background-color: #1a002b; /* Dark background color for the page outside the canvas */
+  font-family: 'Inter', sans-serif; /* Use Inter font */
+}
+/* Styling for the p5.js canvas */
+canvas {
+  display: block; /* Remove extra space below canvas */
+  border-radius: 15px; /* Apply rounded corners to the canvas */
+  box-shadow: 0 0 20px rgba(142, 0, 209, 0.7); /* Add a purple glow effect around the canvas */
+  max-width: 100%; /* Ensure canvas is responsive and fits within the screen width */
+  max-height: 100vh; /* Ensure canvas is responsive and fits within the screen height */
+}
